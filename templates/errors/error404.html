@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}Page Not Found{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+{% block nav %}
+	{{ super() }}
+{% endblock %}
+{% block body %}
+		<div class="login">
+			<div class="login-screen">
+				<div class="app-title">
+					<h1>Not Found</h1>
+				</div>
+				<img id="error" src="{{ url_for('static', filename='images/raspbi404.png') }}"  class="d-inline-block align-top" alt="Error 404">
+				
+			</div>
+		</div>
+{% endblock %}

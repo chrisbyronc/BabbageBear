@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <title>{% block title %} {% endblock %} - Babbage Bear</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favraspbi.ico') }}" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='images/icons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='images/icons/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='images/icons/manifest.json') }}">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+{% block nav %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        <img id="raspbi" src="{{ url_for('static', filename='images/raspbi.png') }}"  class="d-inline-block align-top" alt="Raspberry Pi Logo">
+      </a>
+      <h1 class="navbar-brand mb-0">
+        Babbage Camera
+      </h1>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+<body>
+{% block body %}
+
+{% endblock %}
+</body>
+
+</html>

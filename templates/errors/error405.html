@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Not Allowed{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+{% block nav %}
+	{{ super() }}
+{% endblock %}
+{% block body %}
+		<div class="login">
+			<div class="login-screen">
+				<div class="app-title">
+					<h1>Not Allowed</h1>
+				</div>
+				<img id="error" src="{{ url_for('static', filename='images/raspbi405.png') }}"  class="d-inline-block align-top" alt="Error 405">
+			</div>
+		</div>
+{% endblock %}

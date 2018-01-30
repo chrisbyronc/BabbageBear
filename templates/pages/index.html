@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Camera{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block nav %}
+  {{ super() }}
+{% endblock %}
+
+  {% block body %}
+    {% if session['logged_in'] %}
+    <img id="bg" src="{{ url_for('video_feed') }}" >
+    {% endif %}
+{% endblock %}
